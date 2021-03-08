@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        var array = ["abbate", "barnaba", "zuzzurellone"];
+        var cognome = prompt("inserisci il tuo cognome");
+        console.log("Il tuo cognome è: " + cognome);
+        array.push(cognome);
+        console.log("Lista cognomi non ordinata: " + array);
+        array.sort();
+        console.log("Lista cognomi ordinata: " + array);
+        for (var i = 0; i < array.length; i++) {
+            // if (cognome == array[i]) {     <-- per stampare solo "l'indice umano" del mio cognome
+            //     console.log(array[i] + ": " + (i + 1));
+            //     break
+            // }
+
+            console.log(array[i] + ": " + (i + 1));  //Per stampare tutti i cognomi ordinati con relativo indice 
+        }
+
+        </script>
+    </body>
+</html>
